@@ -1,0 +1,312 @@
+@charset "UTF-8";
+@font-face {
+    font-family: myfont;
+    src: url(sansation_light.woff);
+}
+
+/*
+
+Chris Roskelley
+06/13/2020
+
+*/
+
+/*Basic page style*/
+html{
+    width: 100%;
+    background-color: white;
+
+}
+body{
+    margin: auto;
+    max-width: 1200px;
+    background: linear-gradient(125deg, #d0e0ff 20%, #ffe4d0 );
+    height: 100%;
+    box-shadow: grey 10px 10px 15px, grey -10px -10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav > ul > li {
+    display: block;
+    float: left;
+    width: 14%;
+    text-align: center;
+    margin: 20px 10px;
+    font-size: large;
+    border-left: solid black;
+    border-right: solid black;
+    font-family: myfont;
+}
+nav > ul > li:hover{
+    background: radial-gradient(#d0e0ff, #ffe4d0);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    text-shadow: black 4px 3px 7px;
+}
+h1 {
+    text-align: center;
+    padding-top: 3em;
+}
+h2, h4{
+    margin: 15px 20px;
+}
+div.homepg h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+div.homepg div p {
+    text-align: center;
+    margin: 20px;
+    font-size: large;
+}
+div.homepg div:last-of-type{
+    margin-bottom: 70px;
+}
+div.projects p {
+    text-align: left;
+}
+div.projects a {
+    color: rgb(75, 75, 224);
+    text-shadow: none;
+}
+p.musicp {
+    margin: 20px 50px;
+}
+div.work {
+    width: 75%;
+    margin-left: 50px;
+}
+div > p {
+    padding: 0em 2em;
+}
+h3 {
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    letter-spacing: .6em;
+    margin: 60px 10px;
+    padding-bottom: 10px;
+}
+
+
+/*Columns and Rows*/
+
+div.row {
+   float: left;
+   width: 100%;
+   clear: both;
+   display: table;
+}
+div.row::after{   
+   clear: both;
+   content: "";
+   display: table;
+}
+div[class^="col-"] {
+    float: left;  
+    display: table;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div.col-1-2{width: 48%;}
+div.col-1-2-2{width: 50%; max-width: 600px;}
+div.col-1-3{width: 30%;}
+div.col-1-4{width: 23%;}
+div.col-1-4-4{width: 25%; max-width: 300px;}
+div.col-3-4{width: 73%;}
+
+div.other div {
+    margin: 1.5%;
+    
+}
+div.col-1-3 {
+    margin: 1.5%;
+    border: double 2px black;
+    min-height: 725px;
+}
+div.classes > div > div {
+    padding: 1%;
+    border-top: solid black;
+    margin-bottom: 20px;
+    min-height: 75px;
+}
+.classes {
+    text-align: center;
+}
+div.motorhalf {
+    border: double black;
+    border-radius: 3px;
+    margin: 1%;
+    min-height: 600px;
+}
+div.other {
+    border: double black;
+    border-radius: 3px;
+    margin: 1%;
+}
+div.three {
+    border: none;
+}
+div.col-1-4-4:first-of-type {
+    padding-left: 1%;
+}
+div.col-1-4-4:last-of-type {
+    padding-right: 1%;
+}
+
+/*Table*/
+table{
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    border: solid black;
+}
+
+table tr {
+
+    width: 100%;
+    height: 30px;
+}
+
+table th, table td {
+    min-width: 125px;
+    border: 1px double black;
+    padding: .3em;
+}
+
+table > thead > tr > th:first-of-type{
+    background-color: #ffd277;
+    color: white;
+}
+table > thead > tr > th{
+    background-color: #ff9984;
+    color: white;
+    
+}
+table > thead > tr > th:nth-of-type(7), table > thead > tr > th:nth-of-type(8){
+    background-color: #88afff;
+    color: white;
+    
+}
+
+
+col.time {
+    background-color: #ffefd0;
+    width: 15%;
+}
+col.weekday{
+    background-color: #ffd8d0;
+    width: 15%;
+}
+col.weekend {
+    background-color: #d0e0ff;
+}
+
+tfoot{
+    color: white;
+    background-color: black;
+}
+
+
+/*Graphics*/
+
+figure {
+    min-height: 500px;
+    padding: 1.5em;
+}
+figure.music img{
+    border-width: 20px;
+    border-style: solid;
+    border-image: url(../my_images/tb_border.png) 50 repeat;
+    display: block;
+    width: 100%;
+}
+img.sax{
+    max-width: 300px;
+    height: auto;
+}
+figure.sax {
+    transform: rotateZ(-20deg) translateX(5em);
+
+}
+figure.trumpet {
+    transform: rotateZ(5deg);
+}
+img.trumpet {
+    max-width: 400px;
+    height: auto;
+    -webkit-filter: grayscale(.8);
+    filter: grayscale(.8);
+    
+}
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+div.motorhalf img{
+    margin: 0% 20%;
+    border: 1px solid black;
+    box-shadow: grey 1px 1px 20px;
+}
+figure.motor {
+    border: black double;
+    border-radius: 3px;
+}
+div.three img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: grey 1px 1px 20px;
+}
+div.col-1-4-4 img {
+    max-width: 250px;
+    box-shadow: gray 1px 1px 10px;
+}
+div.left img {
+    float: left;
+    margin-bottom: 10px;
+}
+div.right img {
+    float: right;
+    margin-bottom: 10px;
+}
+
+/*Form*/
+
+form {
+    margin: 0px 75px;
+    font-family: myfont;
+}
+form h2 {
+    text-align: center;
+}
+input#days {
+    text-align: center;
+}
+fieldset {
+    max-width: 450px;
+}
+input:focus, select:focus, textarea:focus {
+   background-color: #ffefd0;
+}
+ 
+input#name:focus:valid, input#phone:focus:valid{
+   background-color: rgb(220, 255, 220);
+}
+input#name:focus:invalid, input#phone:focus:invalid{
+   background-color: rgb(255, 230, 230);
+}
+button {
+    margin: 5px;
+}

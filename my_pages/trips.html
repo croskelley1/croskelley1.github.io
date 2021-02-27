@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trips</title>
+        <link rel="stylesheet" href="../my_styles/primary.css">
+    </head>
+
+    <body>
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="work.html">Work History</a></li>
+                    <li><a href="classes.html">Previous Classes</a></li>
+                    <li><a href="music.html">My Music</a></li>
+                    <li><a href="motorcycles.html">My Motorcycles</a></li>
+                    <li><a href="trips.html">Trips!</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Trips!</h1>
+        <p class="musicp">Last year I went on a couple of trips. In May I went to Moab for the first time. In October, I travled to New York by myself and stayed there for about a week. Below are some pictures and a little more about the trips. Below you can enter your information to plan a trip!</p>
+
+        <div class="col-1-4-4 left">
+            <img src="../my_images/me_arch.png" alt="In Front of an Arch">
+            <img src="../my_images/arch.png" alt="Delicate Arch">
+            <img src="../my_images/sisters.png" alt="The Sisters">
+        </div>
+        <div class="col-1-2-2">
+            
+            <form action="http://icarus.cs.weber.edu/~cr16166/index.html" method="POST">
+                
+                <h2>Plan Your Trip!</h2>
+                <fieldset>
+                    <legend>What's Your Name?</legend>
+                    <input type="text" required/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What's Your Number?</legend>
+                    <input type="tel" name="phone" id="phone" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\ (\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Where To?</legend>
+                    <select name="cities">
+                        <option value="city1">New York</option>
+                        <option value="city2">Moab</option>
+                        <option value="city3">Tokyo</option>
+                        <option value="city4">Calgary</option>
+                        <option value="city5">Los Angeles</option>
+                     </select>
+                </fieldset>
+                
+                
+                <fieldset>
+                    <legend>How Are You Traveling?</legend>
+                    <input type="radio" name="how" />
+                    <label>Plane</label>
+                    <input type="radio" name="how" />
+                    <label>Train</label>
+                    <input type="radio" name="how" />
+                    <label>Car</label>
+                   <input type="radio" name="how" />
+                    <label>Foot</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>How Many Days?</legend>
+                    <input type="number" name="days" id="days" value="1" step="1" min="1" max="14" />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Anything Else?</legend>
+                    <textarea name="extrainfo" id="extrainfo" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="col-1-4-4 right">
+            <img src="../my_images/night_times.png" alt="Times Square @ Night">
+            <img src="../my_images/liberty.png" alt="Lady Liberty">
+            <img src="../my_images/empire.png" alt="Empire State Bldg">
+        </div>
+        <footer>
+            Chris Roskelley &#1161; CS 2350 &#1161; Spring 2020
+        </footer>
+    </body>
+
+
+</html>
